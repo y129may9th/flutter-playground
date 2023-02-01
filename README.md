@@ -1,4 +1,4 @@
-# flutter_widget_key
+# flutter_playground
 
 A new Flutter project.
 
