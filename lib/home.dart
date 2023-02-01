@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_key/samples/widget_key.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -7,10 +8,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: HexColor('FFE7CC'),
       appBar: AppBar(
         title: Text(
           'Flutter Play Ground',
-          style: TextStyle(color: Colors.grey[700]),
+          style: TextStyle(
+            color: HexColor('002E94'),
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
       body: Center(
