@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: HexColor('FFE7CC'),
+      backgroundColor: HexColor('FFF7E9'),
       appBar: AppBar(
         title: Text(
           'Flutter Play Ground',
@@ -21,10 +21,31 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            ElevatedButton(
-              child: const Text('Learning widget key'),
-              onPressed: () => _onPressed(context, const WidgetKey()),
-            ),
+            GestureDetector(
+              onTap: () => _onPressed(context, const WidgetKey()),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(
+                    color: HexColor('002E94'),
+                  ),
+                  borderRadius: const BorderRadius.all(Radius.circular(12)),
+                ),
+                elevation: 0,
+                child: SizedBox(
+                  width: 200,
+                  height: 100,
+                  child: Center(
+                    child: Text(
+                      'Learning widget key',
+                      style: TextStyle(
+                        color: HexColor('002E94'),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
