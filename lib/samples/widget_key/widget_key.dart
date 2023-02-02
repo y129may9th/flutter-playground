@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_key/samples/widget_key/stateful_tiles_page.dart';
 import 'package:flutter_widget_key/samples/widget_key/stateless_tiles_page.dart';
 
 class WidgetKey extends StatelessWidget {
@@ -23,7 +24,7 @@ class WidgetKey extends StatelessWidget {
             const SizedBox(height: 10),
             ElevatedButton(
               child: const Text('state_full'),
-              onPressed: () => _onPressed(context, StatelessColorfulTile()),
+              onPressed: () => _onPressed(context, const StatefulTilesPage()),
             ),
           ],
         ),
