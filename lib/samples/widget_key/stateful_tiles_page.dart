@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 class StatefulColorfulTile extends StatefulWidget {
-  const StatefulColorfulTile({Key? key}) : super(key: key);
+  const StatefulColorfulTile({required Key key}) : super(key: key);
 
   @override
   StatefulColorfulTileState createState() => StatefulColorfulTileState();
@@ -66,8 +66,8 @@ class StatefulTilesPageState extends State<StatefulTilesPage> {
   void initState() {
     super.initState();
     _tiles = [
-      const StatefulColorfulTile(),
-      const StatefulColorfulTile(),
+      StatefulColorfulTile(key: UniqueKey()),
+      StatefulColorfulTile(key: UniqueKey()),
     ];
   }
 
