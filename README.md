@@ -14,3 +14,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## カラーパレット
+- [Color Palette: #002E94 #083AA9 #E1CEB5 #FFE7CC - Color Hunt](https://colorhunt.co/palette/002e94083aa9e1ceb5ffe7cc)
