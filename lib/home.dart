@@ -21,23 +21,26 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Card(
-              shape: RoundedRectangleBorder(
-                side: BorderSide(
-                  color: HexColor('002E94'),
+            GestureDetector(
+              onTap: () => _onPressed(context, const WidgetKey()),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(
+                    color: HexColor('002E94'),
+                  ),
+                  borderRadius: const BorderRadius.all(Radius.circular(12)),
                 ),
-                borderRadius: const BorderRadius.all(Radius.circular(12)),
-              ),
-              elevation: 0,
-              child: SizedBox(
-                width: 200,
-                height: 100,
-                child: Center(
-                  child: Text(
-                    'Learning widget key',
-                    style: TextStyle(
-                      color: HexColor('002E94'),
-                      fontWeight: FontWeight.bold,
+                elevation: 0,
+                child: SizedBox(
+                  width: 200,
+                  height: 100,
+                  child: Center(
+                    child: Text(
+                      'Learning widget key',
+                      style: TextStyle(
+                        color: HexColor('002E94'),
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
