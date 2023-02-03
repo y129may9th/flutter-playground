@@ -17,3 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Colors
 cf. [Color Palette: #002E94 #083AA9 #E1CEB5 #FFE7CC - Color Hunt](https://colorhunt.co/palette/002e94083aa9e1ceb5ffe7cc)
+
+## Packages
+- [hexcolor | Flutter Package](https://pub.dev/packages/hexcolor)
+- 
