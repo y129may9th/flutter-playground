@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_key/samples/widgets/card.dart';
 import 'package:flutter_widget_key/samples/widgets/rich_text.dart';
 
 class Widgets extends StatelessWidget {
@@ -19,6 +20,11 @@ class Widgets extends StatelessWidget {
             ElevatedButton(
               child: const Text('rich text'),
               onPressed: () => _onPressed(context, const RichTextWidget()),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              child: const Text('card'),
+              onPressed: () => _onPressed(context, const CardWidget()),
             ),
             const SizedBox(height: 10),
           ],
