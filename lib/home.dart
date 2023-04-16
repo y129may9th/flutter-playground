@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_key/samples/widget_key/widget_key.dart';
+import 'package:flutter_widget_key/samples/widgets/widgets.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,6 +22,31 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            GestureDetector(
+              onTap: () => _onPressed(context, const Widgets()),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(
+                    color: HexColor('002E94'),
+                  ),
+                  borderRadius: const BorderRadius.all(Radius.circular(12)),
+                ),
+                elevation: 0,
+                child: SizedBox(
+                  width: 200,
+                  height: 100,
+                  child: Center(
+                    child: Text(
+                      'Widgets',
+                      style: TextStyle(
+                        color: HexColor('002E94'),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
             GestureDetector(
               onTap: () => _onPressed(context, const WidgetKey()),
               child: Card(
@@ -45,7 +71,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
