@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_key/samples/future_builder/index.dart';
+import 'package:flutter_widget_key/samples/stream_builder/index.dart';
 import 'package:flutter_widget_key/samples/widget_key/widget_key.dart';
 import 'package:flutter_widget_key/samples/widgets/widgets.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -89,6 +90,31 @@ class HomePage extends StatelessWidget {
                   child: Center(
                     child: Text(
                       'Learning Future Builder',
+                      style: TextStyle(
+                        color: HexColor('002E94'),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () => _onPressed(context, const StreamBuilderIndex()),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(
+                    color: HexColor('002E94'),
+                  ),
+                  borderRadius: const BorderRadius.all(Radius.circular(12)),
+                ),
+                elevation: 0,
+                child: SizedBox(
+                  width: 200,
+                  height: 100,
+                  child: Center(
+                    child: Text(
+                      'Learning Stream Builder',
                       style: TextStyle(
                         color: HexColor('002E94'),
                         fontWeight: FontWeight.bold,
