@@ -4,6 +4,7 @@ import 'package:flutter_widget_key/samples/stream_builder/index.dart';
 import 'package:flutter_widget_key/samples/widget_key/widget_key.dart';
 import 'package:flutter_widget_key/samples/widgets/widgets.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:intl/intl.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -24,6 +25,20 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            Container(
+                child: Column(
+              children: <Widget>[
+                const Text('APP_TITLE'),
+                Text('DATE${getDateForDisplay()}'),
+                const Text('APP_DESCRIPTION'),
+                Image.asset(
+                  'assets/images/yuii.png',
+                  width: 50.0,
+                  height: 50.0,
+                ),
+                Image.asset('assets/images/1.png', width: 50.0, height: 50.0),
+              ],
+            )),
             GestureDetector(
               onTap: () => _onPressed(context, const Widgets()),
               child: Card(
@@ -128,6 +143,12 @@ class HomePage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  String getDateForDisplay() {
+    DateTime now = DateTime.now();
+    var formatter = DateFormat('EEEE dd MMMM yyyy');
+    return formatter.format(now);
   }
 }
 
