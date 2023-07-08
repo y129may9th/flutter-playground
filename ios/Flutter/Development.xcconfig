@@ -1,0 +1,4 @@
+FLUTTER_FLAVOR=Development
+PRODUCT_BUNDLE_IDENTIFIER=com.example.flutter-playground.development
+DISPLAY_NAME=Flutter Playground Development
+FLUTTER_TARGET=lib/main.dart
